@@ -4,15 +4,15 @@ import './Movie.css';
 function Movie(props) {
     return (
         <div>
-            <MoviePoster />
+            <MoviePoster poster = {props.poster} />
             <h1>{props.title}</h1>
         </div>        
     );
 };
 
-function MoviePoster() {
+function MoviePoster(props) {
     return (
-        <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Catching-Fire_poster.jpg" />   
+        <img src={props.poster} />   
     )
 }
 
