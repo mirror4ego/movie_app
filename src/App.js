@@ -21,7 +21,7 @@ const movies = [
   }
 ]
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       {movies.map((movie, index) =>
@@ -29,7 +29,7 @@ function App() {
       )}
     </div>
   );
-}
+};
 
       // 반복문 : 리턴을 넣는 방식
       // {movies.map(movie => {

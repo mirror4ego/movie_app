@@ -1,7 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Movie.css';
 
-function Movie(props) {
+var Movie = (props) => {
+
+    Movie.propTypes = {
+        title: PropTypes.number,
+        poster: PropTypes.number
+    };
+
     return (
         <div>
             <MoviePoster poster = {props.poster} />
@@ -10,9 +17,9 @@ function Movie(props) {
     );
 };
 
-function MoviePoster(props) {
+var MoviePoster = (props1) => {
     return (
-        <img src={props.poster} />   
+        <img src={props1.poster} alt="Movie!!"/>   
     )
 }
 
